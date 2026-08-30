@@ -1,20 +1,32 @@
 /* ========================================
    VARIABLES — couleurs réutilisées partout
-   ======================================== */
-:root {
+   :root {
     --couleur-principale: #2c3e50;
     --couleur-texte: orange;
 }
+   ======================================== */
 
+:root {
+    --couleur-principale: #2c3e50;
+    --couleur-accent: #e67e22;
+    --couleur-texte: white;
+    --couleur-texte-sombre: #333;
+    --couleur-fond-clair: #f9f9f9;
+}
 /* ========================================
    BASE — styles généraux de la page
-   ======================================== */
-body {
+   body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-
+   ======================================== */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+     color: var(--couleur-texte-sombre);
+}
 /* ========================================
    HEADER — bandeau du haut avec nom + menu
    ======================================== */
@@ -23,11 +35,21 @@ header {
     color: var(--couleur-texte);
     padding: 20px;
 }
+/* ========================================
+   HEADER — h1
+   ======================================== */
 
 h1 {
     margin: 0;
+    font-size: 2.2rem;
+    font-weight: 800;
 }
 
+.sous-titre {
+    margin: 5px 0 15px;
+    font-weight: 400;
+    opacity: 0.85;
+}
 /* Liens du menu de navigation */
 nav a {
     color: var(--couleur-texte);
@@ -41,24 +63,36 @@ nav a:hover {
 
 /* ========================================
    SECTIONS — mise en page générale du contenu
-   ======================================== */
-section {
+   section {
     max-width: 800px;
     margin: 30px auto;
     padding: 20px;
 }
+   ======================================== */
 
-/* Titres de chaque section */
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: var(--couleur-fond-clair);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+/* Titres de chaque section 
 h2 {
     color: var(--couleur-texte);
     border-bottom: 2px solid var(--couleur-principale);
     padding-bottom: 5px;
-}
+}*/
 
+h2 {
+    color: var(--couleur-accent);
+    border-bottom: 2px solid var(--couleur-principale);
+    padding-bottom: 5px;
+}
 /* ========================================
    TABLEAU — section Compétences
-   ======================================== */
-table {
+   table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 15px;
@@ -73,6 +107,30 @@ th, td {
 th {
     background-color: var(--couleur-principale);
     color: var(--couleur-texte);
+}
+   ======================================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: var(--couleur-principale);
+    color: white;
+    font-weight: 600;
+}
+
+tbody tr:hover {
+    background-color: #f0f0f0;
 }
 
 /* ========================================
@@ -98,17 +156,20 @@ input, textarea {
 
 button {
     margin-top: 15px;
-    padding: 10px;
-    background-color: var(--couleur-principale);
-    color: var(--couleur-texte);
+    padding: 12px 20px;
+    background-color: var(--couleur-accent);
+    color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
 }
 
 button:hover {
-    background-color: #1a252f;
+    background-color: #cf6c1a;
 }
+
 
 /* ========================================
    PHOTO — section Parcours
@@ -124,13 +185,23 @@ button:hover {
 
 /* ========================================
    FOOTER — pied de page
-   ======================================== */
-footer {
+   footer {
     background-color: #503f2c;
     color: var(--couleur-texte);
     text-align: center;
     padding: 15px;
     margin-top: 30px;
+}
+   ======================================== */
+
+footer {
+    background-color: var(--couleur-principale);
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    opacity: 0.9;
 }
 /* ========================================
    STATS — bloc de chiffres clés en ligne
@@ -196,4 +267,47 @@ nav a, button, .grille-item {
     color: white;
     border: none;
     cursor: pointer;
+}
+/* ========================================
+   LIENS SOCIAUX — badges cliquables
+   ======================================== */
+#contact ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 12px;
+}
+
+#contact ul li a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--couleur-principale);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+#contact ul li a:hover {
+    background-color: var(--couleur-accent);
+}
+/* ========================================
+   LIEN PROJET — style bouton
+   ======================================== */
+#projet a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--couleur-accent);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#projet a:hover {
+    background-color: var(--couleur-principale);
+    transform: translateY(-2px);
 }

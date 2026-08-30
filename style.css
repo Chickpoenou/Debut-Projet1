@@ -330,3 +330,38 @@ nav a, button, .grille-item {
     opacity: 1;
     transform: translateY(0);
 }
+/* ========================================
+   RESPONSIVE — adaptation mobile
+   ======================================== */
+@media (max-width: 768px) {
+
+    /* Stats : passer de côte-à-côte à empilé */
+    .stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Tableau : permettre le défilement horizontal sans casser la page */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    /* Photo : un peu plus petite sur mobile */
+    #parcours img {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Sections : moins de marge/padding pour gagner de la place */
+    section {
+        margin: 30px 15px;
+        padding: 20px;
+    }
+
+    /* Titres : un peu plus petits pour ne pas être trop imposants */
+    h2 {
+        font-size: 1.6rem;
+    }
+}

@@ -1,0 +1,199 @@
+/* ========================================
+   VARIABLES — couleurs réutilisées partout
+   ======================================== */
+:root {
+    --couleur-principale: #2c3e50;
+    --couleur-texte: orange;
+}
+
+/* ========================================
+   BASE — styles généraux de la page
+   ======================================== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ========================================
+   HEADER — bandeau du haut avec nom + menu
+   ======================================== */
+header {
+    background-color: var(--couleur-principale);
+    color: var(--couleur-texte);
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Liens du menu de navigation */
+nav a {
+    color: var(--couleur-texte);
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ========================================
+   SECTIONS — mise en page générale du contenu
+   ======================================== */
+section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* Titres de chaque section */
+h2 {
+    color: var(--couleur-texte);
+    border-bottom: 2px solid var(--couleur-principale);
+    padding-bottom: 5px;
+}
+
+/* ========================================
+   TABLEAU — section Compétences
+   ======================================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--couleur-principale);
+    color: var(--couleur-texte);
+}
+
+/* ========================================
+   FORMULAIRE — section Contact
+   ======================================== */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: var(--couleur-principale);
+    color: var(--couleur-texte);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1a252f;
+}
+
+/* ========================================
+   PHOTO — section Parcours
+   ======================================== */
+#parcours img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 15px 0;
+}
+
+/* ========================================
+   FOOTER — pied de page
+   ======================================== */
+footer {
+    background-color: #503f2c;
+    color: var(--couleur-texte);
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+/* ========================================
+   STATS — bloc de chiffres clés en ligne
+   ======================================== */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 2rem;
+    color: var(--couleur-principale);
+    margin: 0;
+}
+
+.stat-item p {
+    margin: 5px 0 0;
+    color: #555;
+}
+/* ========================================
+   GRID DEMO — grille de mise en page
+   ======================================== */
+.grille-demo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.grille-item {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+}
+/* ========================================
+   TRANSITIONS — effets doux au survol
+   ======================================== */
+nav a, button, .grille-item {
+    transition: all 0.3s ease;
+}
+
+.grille-item:hover {
+    background-color: var(--couleur-principale);
+    color: white;
+    transform: translateY(-3px);
+}
+/* ========================================
+   BOUTON RETOUR EN HAUT
+   ======================================== */
+#retour-haut {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    padding: 12px 16px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    background-color: var(--couleur-principale);
+    color: white;
+    border: none;
+    cursor: pointer;
+}

@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chick Poenou | Portfolio</title>
+   <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
+
+    <!-- ============================================
+         HEADER (parent) : bandeau du haut
+         Fils directs : h1, nav
+         ============================================ -->
     <header>
         <h1>Chick Poenou</h1>
+
+        <!-- nav (fils de header, parent des liens) -->
         <nav>
             <a href="#presentation">Présentation</a>
             <a href="#parcours">Parcours</a>
@@ -17,24 +25,48 @@
         </nav>
     </header>
 
+    <!-- ============================================
+         MAIN (parent) : contenu principal
+         Fils directs : les 5 <section>
+         ============================================ -->
     <main>
+
+        <!-- Section 1 (fils de main) : Présentation -->
         <section id="presentation" class="section-portfolio">
             <h2>Présentation</h2>
-            <p>Élève ingénieur en 5ème année de génie civil à l'EPAC, Université d'Abomey-Calavi, Cotonou, Bénin.</p>
-            <p><em>Passionné par l'innovation numérique appliquée au BTP.</em></p>
-            <p>J'ai commencé à apprendre le développement web et mobile pour approfondir mes connaissances en numérique et allier digital et génie civil.</p>
+             <p>Élève ingénieur en 5ème année de génie civil à l'EPAC, Université d'Abomey-Calavi, Cotonou, Bénin.</p>
+             <p><em>Passionné par l'innovation numérique appliquée au BTP.</em></p>
+             <p>J'ai commencé à apprendre le développement web et mobile pour approfondir mes connaissances en numérique et allier digital et génie civil.</p>
         </section>
-
+        <!-- Section  (fils de main) : Stats -->
+        <section class="stats">
+            <div class="stat-item">
+                <h3>5</h3>
+                <p>Années d'études</p>
+            </div>
+            <div class="stat-item">
+                <h3>4</h3>
+                <p>Stages réalisés</p>
+            </div>
+            <div class="stat-item">
+                <h3>3</h3>
+                <p>Outils créés</p>
+            </div>
+        </section>
+        <!-- Section 2 (fils de main) : Parcours -->
         <section id="parcours" class="section-portfolio">
             <h2>Mon parcours</h2>
-            <img src="photo-chick.png" alt="Photo de Chick Poenou">
-            <p>Actuellement en 5ème année de génie civil, j'ai réalisé plusieurs stages qui m'ont permis de découvrir le terrain : <strong>UBA</strong>, <strong>DIC-BTP</strong>, <strong>SECO</strong> (laboratoire géotechnique) et <strong>ACS BTP</strong>.</p>
-            <p>Grâce à cette formation MIDEESSI, je souhaite apprendre à créer mes propres outils numériques pour le BTP, et aller jusqu'au développement d'applications web et mobiles complètes.</p>
+              <img src="photo-chick.png" alt="Photo de Chick Poenou">
+             <p>Actuellement en 5ème année de génie civil, j'ai réalisé plusieurs stages qui m'ont permis de découvrir le terrain : <strong>UBA</strong>, <strong>DIC-BTP</strong>, <strong>SECO</strong> (laboratoire géotechnique) et <strong>ACS BTP</strong>.</p>
+             <p>Grâce à cette formation MIDEESSI, je souhaite apprendre à créer mes propres outils numériques pour le BTP, et aller jusqu'au développement d'applications web et mobiles complètes.</p>
         </section>
 
+        <!-- Section 3 (fils de main) : Compétences -->
         <section id="competences" class="section-portfolio">
             <h2>Mes compétences</h2>
-            <p>Voici les notions HTML que j'ai découvertes pendant cette formation :</p>
+             <p>Voici les notions HTML que j'ai découvertes pendant cette formation :</p>
+
+            <!-- table (fils de section) : parent de thead et tbody -->
             <table>
                 <thead>
                     <tr>
@@ -65,29 +97,43 @@
                     </tr>
                 </tbody>
             </table>
+
+<!-- GRID DEMO — grille de mise en page -->
+            
+            <div class="grille-demo">
+            <div class="grille-item">HTML</div>
+            <div class="grille-item">CSS</div>
+            <div class="grille-item">JavaScript</div>
+</div>
         </section>
 
+        <!-- Section 4 (fils de main) : Mon projet -->
         <section id="projet" class="section-portfolio">
             <h2>Mon premier projet</h2>
-            <p>Voici la première page web que j'ai réalisée pendant cette formation : une page de présentation utilisant les balises <strong>header</strong>, <strong>nav</strong>, <strong>main</strong>, <strong>section</strong> et <strong>footer</strong>.</p>
+             <p>Voici la première page web que j'ai réalisée pendant cette formation : une page de présentation utilisant les balises <strong>header</strong>, <strong>nav</strong>, <strong>main</strong>, <strong>section</strong> et <strong>footer</strong>.</p>
             <a href="premier-projet.html" target="_blank">Consulter mon premier projet</a>
         </section>
 
+        <!-- Section 5 (fils de main) : Contact -->
         <section id="contact" class="section-portfolio">
             <h2>Me contacter</h2>
 
-            <p>
+             <p>
                 <a href="mailto:chickpoenou@gmail.com">Email : chickpoenou@gmail.com</a><br>
                 <a href="tel:+2290199002393">Tel : +229 0199002393</a>
-            </p>
+             </p>
 
-            <p>Retrouvez-moi aussi ici :</p>
+             <p>Retrouvez-moi aussi ici :</p>
+
+            <!-- ul (fils de section) : parent des li -->
             <ul>
                 <li><a href="https://www.facebook.com/nettanel-poenou" target="_blank">Facebook</a></li>
                 <li><a href="https://github.com/Chickpoenou" target="_blank">GitHub</a></li>
             </ul>
 
             <h3>Laissez-moi un message</h3>
+
+            <!-- form (fils de section) : parent des label, input, textarea, button -->
             <form>
                 <label for="nom">Nom :</label>
                 <input type="text" id="nom" name="nom" required>
@@ -103,8 +149,15 @@
         </section>
     </main>
 
+    <!-- ============================================
+         FOOTER (parent) : pied de page
+         Fils direct : p
+         ============================================ -->
     <footer>
         <p>© 2026 Chick Poenou. Tous droits réservés.</p>
     </footer>
+
+    <button id="retour-haut" title="Retour en haut">↑</button>
+    <script src="script.js"></script>
 </body>
 </html>

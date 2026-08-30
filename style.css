@@ -317,3 +317,16 @@ nav a, button, .grille-item {
     background-color: var(--couleur-principale);
     transform: translateY(-2px);
 }
+/* ========================================
+   ANIMATION AU SCROLL
+   ======================================== */
+.cache {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

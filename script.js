@@ -2,12 +2,6 @@ const formulaire = document.querySelector("form");
 
 formulaire.addEventListener("submit", function(event) {
     event.preventDefault();
-    alert("Merci pour votre message ! Je vous répondrai bientôt.");
-});
-const formulaire = document.querySelector("form");
-
-formulaire.addEventListener("submit", function(event) {
-    event.preventDefault();
 
     const nom = document.getElementById("nom").value;
     const email = document.getElementById("email").value;
@@ -19,6 +13,7 @@ formulaire.addEventListener("submit", function(event) {
         alert("Merci " + nom + " ! Votre message a bien été reçu.");
     }
 });
+
 const liensNav = document.querySelectorAll("nav a");
 
 liensNav.forEach(function(lien) {
@@ -30,10 +25,6 @@ liensNav.forEach(function(lien) {
     });
 });
 
-nav a.actif {
-    text-decoration: underline;
-    font-weight: bold;
-}
 const boutonHaut = document.getElementById("retour-haut");
 
 window.addEventListener("scroll", function() {
@@ -46,4 +37,18 @@ window.addEventListener("scroll", function() {
 
 boutonHaut.addEventListener("click", function() {
     window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+const sectionsCachees = document.querySelectorAll(".cache");
+
+const observateur = new IntersectionObserver(function(entrees) {
+    entrees.forEach(function(entree) {
+        if (entree.isIntersecting) {
+            entree.target.classList.add("visible");
+        }
+    });
+}, { threshold: 0.2 });
+
+sectionsCachees.forEach(function(section) {
+    observateur.observe(section);
 });

@@ -33,8 +33,19 @@ body {
 header {
     background-color: var(--couleur-principale);
     color: var(--couleur-texte);
-    padding: 20px;
+    padding: 30px 20px 0;
 }
+
+nav {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    padding-bottom: 20px;
+}
+
 /* ========================================
    HEADER — h1
    ======================================== */
@@ -56,11 +67,16 @@ h1 {
 nav a {
     color: var(--couleur-texte);
     text-decoration: none;
-    margin-right: 15px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.15);
+    text-decoration: none;
 }
 
 /* ========================================

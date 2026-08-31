@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chick Poenou | Portfolio</title>
+    <meta name="description" content="Chick Poenou - Élève ingénieur en Génie Civil et développeur web. Création de sites vitrines, boutiques en ligne et outils numériques sur mesure.">
+    <title>Chick Poenou | Portfolio & CV</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
@@ -11,38 +12,38 @@
 </head>
 <body>
 
-    <!-- ============================================
-         HEADER (parent) : bandeau du haut
-         Fils directs : h1, nav
-         ============================================ -->
+    <!-- HEADER -->
     <header>
-        <h1>Chick Poenou</h1>
-        <p class="sous-titre">Élève ingénieur en Génie Civil | Futur développeur web</p>
+    <h1>Chick Poenou</h1>
+    <p class="sous-titre">Élève ingénieur en Génie Civil | Développeur Web</p>
+    <p class="accroche">
+        Je donne une visibilité numérique aux entreprises, boutiques et cabinets 
+        qui ne sont pas encore sur le web.
+    </p>
+    <a href="#contact" class="btn-hero">📩 Discutons de votre projet</a>
+    <!-- Navigation -->
+    <nav>
+        <a href="#presentation">Présentation</a>
+        <a href="#services">Services</a>
+        <a href="#parcours">Parcours</a>
+        <a href="#competences">Compétences</a>
+        <a href="#projet">Projets</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-        <!-- nav (fils de header, parent des liens) -->
-        <nav>
-            <a href="#presentation">Présentation</a>
-            <a href="#parcours">Parcours</a>
-            <a href="#competences">Compétences</a>
-            <a href="#projet">Mon projet</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <!-- ============================================
-         MAIN (parent) : contenu principal
-         Fils directs : les 5 <section>
-         ============================================ -->
+    <!-- MAIN CONTENT -->
     <main>
 
-        <!-- Section 1 (fils de main) : Présentation -->
+        <!-- Section 1 : Présentation -->
         <section id="presentation" class="section-portfolio cache">
             <h2>Présentation</h2>
-             <p>Élève ingénieur en 5ème année de génie civil à l'EPAC, Université d'Abomey-Calavi, Cotonou, Bénin.</p>
-             <p><em>Passionné par l'innovation numérique appliquée au BTP.</em></p>
-             <p>J'ai commencé à apprendre le développement web et mobile pour approfondir mes connaissances en numérique et allier digital et génie civil.</p>
+            <p>Élève ingénieur en 5ème année de génie civil à l'EPAC (Université d'Abomey-Calavi), Cotonou, Bénin.</p>
+            <p><em>Passionné par l'innovation numérique appliquée au BTP.</em></p>
+            <p>J'ai développé des compétences en programmation web et mobile pour allier technologies digitales, automatisation et ingénierie civile.</p>
         </section>
-        <!-- Section  (fils de main) : Stats -->
+
+        <!-- Section : Stats -->
         <section class="stats">
             <div class="stat-item">
                 <h3>5</h3>
@@ -53,118 +54,130 @@
                 <p>Stages réalisés</p>
             </div>
             <div class="stat-item">
-                <h3>3</h3>
+                <h3>3+</h3>
                 <p>Outils créés</p>
             </div>
         </section>
-        <!-- Section 2 (fils de main) : Parcours -->
+
+        <!-- Section 2 : Parcours -->
         <section id="parcours" class="section-portfolio cache">
-    <h2>Mon <span>parcours</span></h2>
-    
-    <div class="photo-conteneur">
-        <img src="photo-chick.png" alt="Photo de Chick Poenou">
-        <span class="badge badge-1">Excel / VBA</span>
-        <span class="badge badge-2">ArchiCAD</span>
-        <span class="badge badge-3">HTML/CSS</span>
-    </div>
+            <h2>Mon <span>parcours</span></h2>
+            
+            <div class="photo-conteneur">
+                <img src="photo-chick.png" alt="Photo de Chick Poenou">
+                <span class="badge badge-1">Excel / VBA</span>
+                <span class="badge badge-2">ArchiCAD</span>
+                <span class="badge badge-3">HTML/CSS</span>
+            </div>
 
-    <p>Actuellement en 5ème année de génie civil, j'ai réalisé plusieurs stages qui m'ont permis de découvrir le terrain : <strong>UBA</strong>, <strong>DIC-BTP</strong>, <strong>SECO</strong> (laboratoire géotechnique) et <strong>ACS BTP</strong>.</p>
-    <p>Grâce à cette formation MIDEESSI, je souhaite apprendre à créer mes propres outils numériques pour le BTP, et aller jusqu'au développement d'applications web et mobiles complètes.</p>
-</section>
+            <p>Actuellement en 5ème année de génie civil, j'ai réalisé plusieurs stages professionnels sur le terrain et en laboratoire : <strong>UBA</strong>, <strong>DIC-BTP</strong>, <strong>SECO</strong> (géotechnique) et <strong>ACS BTP</strong>.</p>
+            <p>Grâce à mes formations et projets personnels, je crée des outils numériques adaptés aux besoins du BTP tout en développant des applications web modernes.</p>
+        </section>
 
-        <!-- Section 3 (fils de main) : Compétences -->
+        <!-- Section 3 : Compétences -->
         <section id="competences" class="section-portfolio cache">
             <h2>Mes <span>compétences</span></h2>
-             <p>Voici les notions HTML que j'ai découvertes pendant cette formation :</p>
+            <p>Vue d'ensemble de mes domaines d'expertise technique et numérique :</p>
 
-            <!-- table (fils de section) : parent de thead et tbody -->
             <table>
                 <thead>
                     <tr>
-                        <th>Notion</th>
-                        <th>Description</th>
+                        <th>Domaine</th>
+                        <th>Outils & Savoir-faire</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Structure HTML</td>
-                        <td>DOCTYPE, head, body, title</td>
+                        <td><strong>Génie Civil & Structure</strong></td>
+                        <td>Calcul de structure, suivi de chantier, géotechnique, ArchiCAD</td>
                     </tr>
                     <tr>
-                        <td>Balises</td>
-                        <td>h1-h3, p, ul, ol, li, header, nav, main, section, footer</td>
+                        <td><strong>Automatisation & Data</strong></td>
+                        <td>Microsoft Excel, formules avancées, VBA (interfaces UserForm)</td>
                     </tr>
                     <tr>
-                        <td>Attributs</td>
-                        <td>href, src, alt, id, class</td>
-                    </tr>
-                    <tr>
-                        <td>Liens</td>
-                        <td>ancres, pages externes, mailto, tel</td>
-                    </tr>
-                    <tr>
-                        <td>Formulaires</td>
-                        <td>form, input, label, textarea, button</td>
+                        <td><strong>Développement Web</strong></td>
+                        <td>HTML5, CSS3, JavaScript, intégration responsive</td>
                     </tr>
                 </tbody>
             </table>
 
-<!-- GRID DEMO — grille de mise en page -->
-            
+            <!-- GRID DEMO -->
             <div class="grille-demo">
-    <div class="grille-item">
-        <span class="icone">🌐</span>
-        <strong>HTML</strong>
-        <p>Structure et contenu</p>
-    </div>
-    <div class="grille-item">
-        <span class="icone">🎨</span>
-        <strong>CSS</strong>
-        <p>Mise en forme et style</p>
-    </div>
-    <div class="grille-item">
-        <span class="icone">⚡</span>
-        <strong>JavaScript</strong>
-        <p>Interactivité</p>
-    </div>
-</div>
+                <div class="grille-item">
+                    <span class="icone">🌐</span>
+                    <strong>HTML5</strong>
+                    <p>Structure et sémantique web</p>
+                </div>
+                <div class="grille-item">
+                    <span class="icone">🎨</span>
+                    <strong>CSS3</strong>
+                    <p>Mise en forme, animations et design</p>
+                </div>
+                <div class="grille-item">
+                    <span class="icone">⚡</span>
+                    <strong>JavaScript</strong>
+                    <p>Interactivité et logique applicative</p>
+                </div>
+            </div>
         </section>
 
-        <!-- Section 4 (fils de main) : Mon projet -->
+        <!-- Section 4 : Mon projet -->
         <section id="projet" class="section-portfolio cache">
-    <h2>Mon premier <span>projet</span></h2>
-    <p>Voici la première page web que j'ai réalisée pendant cette formation : une page de présentation utilisant les balises <strong>header</strong>, <strong>nav</strong>, <strong>main</strong>, <strong>section</strong> et <strong>footer</strong>.</p>
-    <a href="premier-projet.html" target="_blank" class="btn">Consulter mon premier projet</a>
-</section>
+            <h2>Mon premier <span>projet web</span></h2>
+            <p>Voici la première page web que j'ai réalisée : une page de présentation structurée avec les balises HTML sémantiques (<code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code>, <code>footer</code>).</p>
+            <a href="premier-projet.html" target="_blank" class="btn">Consulter mon projet</a>
+        </section>
+        <section id="services">
+         <h2>Mes <span>services</span></h2>
+         <div class="services-grid">
+            <div class="service-card">
+                <span class="icone">🌐</span>
+                <h3>Site Vitrine</h3>
+                <p>Présentez votre entreprise avec un site moderne et responsive.</p>
+            </div>
+            <div class="service-card">
+                <span class="icone">🛍️</span>
+                <h3>Boutique en ligne</h3>
+                <p>Vendez vos produits avec une boutique e-commerce sécurisée.</p>
+            </div>
+            <div class="service-card">
+                <span class="icone">📊</span>
+                <h3>Outils sur mesure</h3>
+                <p>Automatisez vos tâches avec des outils numériques adaptés.</p>
+            </div>
+         </div>
+        </section>  
 
-        <!-- Section 5 (fils de main) : Contact -->
+        <!-- Section 5 : Contact -->
         <section id="contact" class="section-portfolio cache">
             <h2>Me <span>contacter</span></h2>
 
-            <p>
-              <a href="mailto:chickpoenou@gmail.com">📧 Email : chickpoenou@gmail.com</a><br>
-              <a href="tel:+2290199002393">📞 Tel : +229 0199002393</a>
-            </p>
+            <div class="contact-coordonnees">
+                <p><a href="mailto:chickpoenou@gmail.com">📧 Email : chickpoenou@gmail.com</a></p>
+                <p><a href="tel:+2290199002393">📞 Tel : +229 0199002393</a></p>
+            </div>
 
             <p>Retrouvez-moi aussi ici :</p>
 
-            <ul>
-              <li><a href="https://www.facebook.com/nettanel-poenou" target="_blank">📘 Facebook</a></li>
-              <li><a href="https://github.com/Chickpoenou" target="_blank">💻 GitHub</a></li>
+            <ul class="reseaux-sociaux">
+                <li><a href="https://www.facebook.com/nettanel-poenou" target="_blank">📘 Facebook</a></li>
+                <li><a href="https://github.com/Chickpoenou" target="_blank">💻 GitHub</a></li>
             </ul>
 
             <h3>Laissez-moi un message</h3>
 
-            <!-- form (fils de section) : parent des label, input, textarea, button -->
-            <form>
-                <label for="nom">Nom :</label>
-                <input type="text" id="nom" name="nom" required>
+            <form 
+                action="https://formspree.io/f/xzebdygk" 
+                method="POST">
+                <label for="nom">Votre nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom complet" required>
 
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email">Votre email</label>
+                <input type="email" id="email" name="email" placeholder="votre.email@exemple.com" required>
 
-                <label for="message">Message :</label>
-                <textarea id="message" name="message"></textarea>
+                <label for="message">Votre message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Écrivez votre message ici..."></textarea>
                 <p id="compteur">0 caractères</p>           
 
                 <button type="submit" class="btn">Envoyer</button>
@@ -172,10 +185,7 @@
         </section>
     </main>
 
-    <!-- ============================================
-         FOOTER (parent) : pied de page
-         Fils direct : p
-         ============================================ -->
+    <!-- FOOTER -->
     <footer>
         <p>© 2026 Chick Poenou. Tous droits réservés.</p>
     </footer>

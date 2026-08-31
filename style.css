@@ -1,11 +1,6 @@
 /* ========================================
    VARIABLES — couleurs réutilisées partout
-   :root {
-    --couleur-principale: #2c3e50;
-    --couleur-texte: orange;
-}
    ======================================== */
-
 :root {
     --couleur-principale: #2c3e50;
     --couleur-accent: #e67e22;
@@ -15,11 +10,6 @@
 }
 /* ========================================
    BASE — styles généraux de la page
-   body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
    ======================================== */
 body {
     font-family: 'Poppins', Arial, sans-serif;
@@ -31,9 +21,24 @@ body {
    HEADER — bandeau du haut avec nom + menu
    ======================================== */
 header {
-    background-color: var(--couleur-principale);
+    background: linear-gradient(135deg, var(--couleur-principale) 0%, #1a2530 100%);
     color: var(--couleur-texte);
     padding: 30px 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 250px;
+    height: 250px;
+    background: var(--couleur-accent);
+    border-radius: 50%;
+    filter: blur(90px);
+    opacity: 0.3;
 }
 
 nav {
@@ -81,11 +86,6 @@ nav a:hover {
 
 /* ========================================
    SECTIONS — mise en page générale du contenu
-   section {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 20px;
-}
    ======================================== */
 
 section {
@@ -97,11 +97,7 @@ section {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
 /* Titres de chaque section 
-h2 {
-    color: var(--couleur-texte);
-    border-bottom: 2px solid var(--couleur-principale);
-    padding-bottom: 5px;
-}*/
+*/
 
 h2 {
     color: var(--couleur-texte-sombre);
@@ -118,22 +114,6 @@ h2 span {
 }
 /* ========================================
    TABLEAU — section Compétences
-   table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-}
-
-th, td {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: var(--couleur-principale);
-    color: var(--couleur-texte);
-}
    ======================================== */
 table {
     width: 100%;
@@ -196,7 +176,6 @@ button:hover {
     background-color: #cf6c1a;
 }
 
-
 /* ========================================
    PHOTO — section Parcours
    ======================================== */
@@ -208,18 +187,9 @@ button:hover {
     display: block;
     margin: 15px 0;
 }
-
 /* ========================================
    FOOTER — pied de page
-   footer {
-    background-color: #503f2c;
-    color: var(--couleur-texte);
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-}
    ======================================== */
-
 footer {
     background-color: var(--couleur-principale);
     color: white;
@@ -389,7 +359,7 @@ nav a, button, .grille-item {
    SECTION CONTACT — fond sombre avec effet
    ======================================== */
 #contact {
-    background-color: #2b2b2d;
+    background-color: #08010d;
     color: white;
     position: relative;
     overflow: hidden;
@@ -417,4 +387,50 @@ nav a, button, .grille-item {
 #contact p, #contact label {
     position: relative;
     z-index: 2;
+}
+/* ========================================
+   BADGES FLOTTANTS — autour de la photo
+   ======================================== */
+.photo-conteneur {
+    position: relative;
+    display: inline-block;
+}
+
+.badge {
+    position: absolute;
+    background-color: white;
+    color: var(--couleur-texte-sombre);
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.badge-1 {
+    top: 10px;
+    right: -60px;
+}
+
+.badge-2 {
+    top: 90px;
+    right: -90px;
+}
+
+.badge-3 {
+    bottom: 20px;
+    right: -50px;
+}
+/* ========================================
+   SECTION PROJET — mise en avant
+   ======================================== */
+#projet {
+    border-left: 6px solid var(--couleur-accent);
+}/* ========================================
+   COMPTEUR DE CARACTÈRES
+   ======================================== */
+#compteur {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 3px 0 0;
 }

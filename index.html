@@ -59,11 +59,18 @@
         </section>
         <!-- Section 2 (fils de main) : Parcours -->
         <section id="parcours" class="section-portfolio cache">
-            <h2>Mon <span>parcours</span></h2>
-              <img src="photo-chick.png" alt="Photo de Chick Poenou">
-             <p>Actuellement en 5ème année de génie civil, j'ai réalisé plusieurs stages qui m'ont permis de découvrir le terrain : <strong>UBA</strong>, <strong>DIC-BTP</strong>, <strong>SECO</strong> (laboratoire géotechnique) et <strong>ACS BTP</strong>.</p>
-             <p>Grâce à cette formation MIDEESSI, je souhaite apprendre à créer mes propres outils numériques pour le BTP, et aller jusqu'au développement d'applications web et mobiles complètes.</p>
-        </section>
+    <h2>Mon <span>parcours</span></h2>
+    
+    <div class="photo-conteneur">
+        <img src="photo-chick.png" alt="Photo de Chick Poenou">
+        <span class="badge badge-1">Excel / VBA</span>
+        <span class="badge badge-2">ArchiCAD</span>
+        <span class="badge badge-3">HTML/CSS</span>
+    </div>
+
+    <p>Actuellement en 5ème année de génie civil, j'ai réalisé plusieurs stages qui m'ont permis de découvrir le terrain : <strong>UBA</strong>, <strong>DIC-BTP</strong>, <strong>SECO</strong> (laboratoire géotechnique) et <strong>ACS BTP</strong>.</p>
+    <p>Grâce à cette formation MIDEESSI, je souhaite apprendre à créer mes propres outils numériques pour le BTP, et aller jusqu'au développement d'applications web et mobiles complètes.</p>
+</section>
 
         <!-- Section 3 (fils de main) : Compétences -->
         <section id="competences" class="section-portfolio cache">
@@ -113,10 +120,10 @@
 
         <!-- Section 4 (fils de main) : Mon projet -->
         <section id="projet" class="section-portfolio cache">
-            <h2>Mon premier projet</h2>
-             <p>Voici la première page web que j'ai réalisée pendant cette formation : une page de présentation utilisant les balises <strong>header</strong>, <strong>nav</strong>, <strong>main</strong>, <strong>section</strong> et <strong>footer</strong>.</p>
-            <a href="premier-projet.html" target="_blank">Consulter mon premier projet</a>
-        </section>
+    <h2>Mon premier <span>projet</span></h2>
+    <p>Voici la première page web que j'ai réalisée pendant cette formation : une page de présentation utilisant les balises <strong>header</strong>, <strong>nav</strong>, <strong>main</strong>, <strong>section</strong> et <strong>footer</strong>.</p>
+    <a href="premier-projet.html" target="_blank">Consulter mon premier projet</a>
+</section>
 
         <!-- Section 5 (fils de main) : Contact -->
         <section id="contact" class="section-portfolio cache">
@@ -147,6 +154,7 @@
 
                 <label for="message">Message :</label>
                 <textarea id="message" name="message"></textarea>
+                <p id="compteur">0 caractères</p>           
 
                 <button type="submit">Envoyer</button>
             </form>

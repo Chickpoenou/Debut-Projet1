@@ -52,3 +52,10 @@ const observateur = new IntersectionObserver(function(entrees) {
 sectionsCachees.forEach(function(section) {
     observateur.observe(section);
 });
+const champMessage = document.getElementById("message");
+const compteur = document.getElementById("compteur");
+
+champMessage.addEventListener("input", function() {
+    const nombreCaracteres = champMessage.value.length;
+    compteur.textContent = nombreCaracteres + " caractères";
+});

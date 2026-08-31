@@ -468,3 +468,14 @@ nav a, button, .grille-item {
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
+/* ========================================
+   COHÉRENCE — espacements uniformes
+   ======================================== */
+section p {
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+section p:last-child {
+    margin-bottom: 0;
+}
